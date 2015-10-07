@@ -5,8 +5,8 @@ module.exports = function(config,DEBUG) {
 	var connect = function () {
 		var dburl;
 		//Check for heroku mongodb var
-		if (process.env.MONGOHQ_URL)
-			dburl = process.env.MONGOHQ_URL;
+		if (process.env.MONGOLAB_URI || process.env.MONGOHQ_URL)
+			dburl = process.env.MONGOLAB_URI || process.env.MONGOHQ_URL;
 		else 
 			dburl = 'mongodb://localhost/' + (DEBUG?'amm_test':'amm');
 		if (DEBUG)
