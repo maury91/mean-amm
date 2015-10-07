@@ -1,5 +1,5 @@
 {
-  "name": "maurizio-carboni-node-amm",
+  "name": "mean-amm",
   "version": "1.0.0",
   "dependencies": {
     "bcrypt-nodejs": {
