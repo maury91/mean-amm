@@ -11,5 +11,10 @@
 		"Home" : "Home",
 		"Login": "Accedi",
 		"Admin": "Amministrazione"
+	},
+	"login" : {
+		"login": "Accedi",
+		"username": "Nome utente",
+		"password": "Password"
 	}
 }

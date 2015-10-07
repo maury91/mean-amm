@@ -194,6 +194,119 @@ html,body {
 /* Login */
 .login {
 	text-align: center;
+	justify-content: center;
+}
+.login > h1 {
+    text-align: center;
+    font-family: 'Lato', sans-serif;
+    margin-bottom: 1em;
+    margin-top: 0;
+}
+/* One at Time */
+.oneAT {
+    display: inline-block;
+    vertical-align: top;
+    zoom: 1; /* Fix for IE7 */
+    *display: inline; /* Fix for IE7 */
+    position: relative;
+    text-align: left;
+}
+.oneAT > div.container {
+    position: relative;
+}
+.oneAT > input,.oneAT > div > input {
+    font-size: 1.2em;
+    background: transparent;
+    border: none;
+    font-weight: 300;
+    font-family: 'Lato', sans-serif;
+    padding: .0em 1em;
+    margin:0;
+    box-sizing:border-box;
+    border-radius: 0;
+}
+.oneAT > div > span.icon-next {
+    position: absolute;
+    line-height: 1.2em;
+    right: .4em;
+    cursor: pointer;
+    display: none;
+}
+.oneAT > div.text {
+    font-size: 1em;
+    background: none;
+    position: relative;
+    overflow: hidden;
+}
+.oneAT > div.text > span {
+    display: block;
+}
+.oneAT > span.status {
+    background: rgba(255,255,255,.5);
+    display: block;
+    width: 0px;
+    height: 5px;
+    bottom: 0;;
+}
+.oneAT > span.status::before {
+    content: '';
+    background-color: rgba(255,255,255,.2);
+    width: 100%;
+    position: absolute;
+    left: 0;
+    height: 5px;
+    bottom: 0;
+}
+.oneAT > div > *:focus {
+    outline: none;
+}
+.oneAT > span.waiting {
+    height: 1rem;
+    width: 4rem;
+    display: block;
+    margin-left: -2rem;
+    -webkit-animation: oneATLoading 1s  0 infinite alternate;
+    -o-animation: oneATLoading 1s  0 infinite alternate;
+    animation: oneATLoading 1s  0 infinite alternate;
+    position: absolute;
+}
+/* Chrome, Safari, Opera */
+@-webkit-keyframes oneATLoading {
+    from {left: 0;}
+    to {left: 100%;}
+}
+
+/* Standard syntax */
+@keyframes oneATLoading {
+    from {left: 0;}
+    to {left: 100%;}
+}
+/* OneAT login */
+
+.login .oneAT {
+    margin: 1rem auto;
+}
+.login .oneAT > * {
+    background-color: #E74C3C;
+    color:#FFF;
+}
+.login .oneAT > * > * {
+    color: #FFF;
+}
+.login .oneAT ::input-placeholder{
+    color:rgba(255,255,255,.7);
+}
+.login .oneAT ::-webkit-input-placeholder{
+    color:rgba(255,255,255,.7);
+}
+.login .oneAT ::-ms-input-placeholder{
+    color:rgba(255,255,255,.7);
+}
+.login .oneAT :-moz-placeholder{
+    color:rgba(255,255,255,.7);
+}
+.login .oneAT ::-moz-placeholder{
+    color:rgba(255,255,255,.7);
 }
 
 /* Colors */

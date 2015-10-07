@@ -21,7 +21,8 @@ angular.module('NodeAmm').config(['$routeProvider',function($routeProvider){
 			controller: "PlaceShowController"
 		})
 		.when('/login',{
-			templateUrl: "assets/templates/login/index.html"
+			templateUrl: "assets/templates/login/index.html",
+			controller: "LoginController"
 		})
 		;
 }]);

@@ -11,5 +11,10 @@
 		"Home" : "Home",
 		"Login": "Login",
 		"Admin": "Admin"
+	},
+	"login" : {
+		"login": "Login",
+		"username": "Username",
+		"password": "Password"
 	}
 }
