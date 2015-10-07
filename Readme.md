@@ -17,6 +17,7 @@ This website is deployed on Heroku and you can visit it here : https://thawing-s
  - Login under Angular.js
  - Insert events under Angular
  - Show my events
+ - Add change language flag in the home
 
 ## What is doed
 
