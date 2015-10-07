@@ -22,7 +22,6 @@
   "description": "Refactoring of the project I've doed for AMM (System Administrator)",
   "scripts": {
     "test": "mocha test.js --NODE_ENV=test",
-    "open": "node bin/www && chrome http://localhost:3000",
     "postinstall": "node defData.js",
     "start": "node bin/www"
   },
