@@ -2,6 +2,11 @@
   "name": "mean-amm",
   "version": "1.0.0",
   "dependencies": {
+    "async": {
+      "version": "1.4.2",
+      "from": "async@*",
+      "resolved": "https://registry.npmjs.org/async/-/async-1.4.2.tgz"
+    },
     "bcrypt-nodejs": {
       "version": "0.0.3",
       "from": "bcrypt-nodejs@*",
