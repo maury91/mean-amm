@@ -1,0 +1,11 @@
+<div class="wrapper color-blue search">
+	<na-page-nav></na-page-nav>
+	<div class="phrase">
+		<na-selector options="days" value="day"></na-selector>
+		<span>{{ goto }}</span>
+		<na-selector options="types" value="type"></na-selector>
+		<span>{{ near}}</span>
+		<na-selector options="zones" value="zone"></na-selector>
+	</div>
+	<a class="button" ng-click="search()">Cerca</a>
+</div>

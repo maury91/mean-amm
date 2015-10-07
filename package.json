@@ -1,0 +1,45 @@
+{
+  "name": "mean-amm",
+  "main": "app.js",
+  "dependencies": {
+    "bcrypt-nodejs": "0.0.3",
+    "body-parser": "^1.14.1",
+    "cookie-parser": "^1.4.0",
+    "express": "^4.13.3",
+    "express-session": "^1.11.3",
+    "mongoose": "^4.1.9",
+    "passport": "^0.3.0",
+    "passport-local": "^1.0.0",
+    "promise": "^7.0.4",
+    "request": "^2.64.0"
+  },
+  "devDependencies": {
+    "async": "^1.4.2",
+    "mocha": "^2.3.3",
+    "supertest": "^1.1.0"
+  },
+  "version": "1.0.0",
+  "description": "Refactoring of the project I've doed for AMM (System Administrator)",
+  "scripts": {
+    "test": "mocha test.js --NODE_ENV=test",
+    "open": "node bin/www && chrome http://localhost:3000",
+    "postinstall": "node defData.js",
+    "start": "node bin/www"
+  },
+  "keywords": [
+    "nodejs",
+    "express",
+    "sample",
+    "angularjs"
+  ],
+  "author": "Maurizio Carboni",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "http://github.com/maury91/mean-amm"
+  },
+  "bugs": {
+    "url": "https://github.com/maury91/mean-amm/issues"
+  },
+  "homepage": "https://github.com/maury91/mean-amm"
+}

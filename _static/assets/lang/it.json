@@ -1,0 +1,15 @@
+{
+	"search" : {
+		"days" : ["Oggi","Domani","Questa Settimana","Questo Mese"],
+		"types" : ["mangiare","un concerto","ballare","bere","vedere un film"],
+		"goto" : "voglio andare a",
+		"near" : "nei pressi di",
+		"search"	: "Cerca",
+		"nothing"	: "Nessun risultato trovato"
+	},
+	"menu" : {
+		"Home" : "Home",
+		"Login": "Accedi",
+		"Admin": "Amministrazione"
+	}
+}

@@ -1,0 +1,5 @@
+<nav>
+	<ul>
+		<li ng-repeat="(key, value) in menu" ng-show="value.visible"><a class="icon" ng-href="#{{key | lowercase}}">{{value.text}}</a></li>
+	</ul>
+</nav>

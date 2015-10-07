@@ -1,0 +1,17 @@
+<div class="wrapper color-blue search_result">
+	<na-page-nav></na-page-nav>
+	<div ng-controller="SearchIndexController" class="selectors">
+		<na-selector options="days" value="day"></na-selector>
+		<na-selector options="types" value="type"></na-selector>
+		<na-selector options="zones" value="zone"></na-selector>
+	</div>
+	<div class="results">
+		<p class="info" ng-hide="results.length">{{nothing_founded}}</p>
+		<ul ng-show="results.length">
+			<li ng-repeat="result in results">
+				<h2>{{result.name}}</h2>
+				<h3>{{result.position.longname}}</h3>
+			</li>
+		</ul>
+	</div>
+</div>

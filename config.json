@@ -1,0 +1,4 @@
+{
+	"cookieSecret" : "SECRET_HERE",
+	"sessionSecret": "SESSIONE_SECRET_HERE"
+}

@@ -1,0 +1,15 @@
+{
+	"search" : {
+		"days" : ["Today","Tomorrow","This Week","This Month"],
+		"types" : ["to eat","at a concert","to dance","to drink","to watch a movie"],
+		"goto" : "i wanna go",
+		"near" : "near",
+		"search"	: "Search",
+		"nothing"	: "No results founded"
+	},
+	"menu" : {
+		"Home" : "Home",
+		"Login": "Login",
+		"Admin": "Admin"
+	}
+}
