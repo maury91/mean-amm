@@ -2,6 +2,7 @@
   "name": "mean-amm",
   "main": "app.js",
   "dependencies": {
+    "async": "^1.4.2",
     "bcrypt-nodejs": "0.0.3",
     "body-parser": "^1.14.1",
     "cookie-parser": "^1.4.0",
@@ -14,7 +15,6 @@
     "request": "^2.64.0"
   },
   "devDependencies": {
-    "async": "^1.4.2",
     "mocha": "^2.3.3",
     "supertest": "^1.1.0"
   },

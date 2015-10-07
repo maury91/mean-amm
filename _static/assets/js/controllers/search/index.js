@@ -7,7 +7,6 @@ angular.module('NodeAmm').controller('SearchIndexController', function($scope,$t
 		//Watch event for live update
 		$scope.$on('naselector:updated', function(event){
 			$timeout(function(){
-				console.log($scope.day,$scope.type,$scope.zone);
 				//Wait for the animation
 				setTimeout($scope.search,500);
 			});

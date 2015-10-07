@@ -17,7 +17,6 @@ angular.module('NodeAmm').controller('SearchResultController', function($scope,$
 		$http.get('/event/search/'+day+'/'+type+'/'+params.position).then(function(ev){
 			if (animation)
 				afterAnimation = function() {
-					console.log('After  animation!');
 					$scope.results = ev.data;
 					$scope.$digest();
 					$('.results ul').fadeIn(300);
