@@ -41,5 +41,8 @@
   "bugs": {
     "url": "https://github.com/maury91/mean-amm/issues"
   },
-  "homepage": "https://github.com/maury91/mean-amm"
+  "homepage": "https://github.com/maury91/mean-amm",
+  "engines": {
+    "node": "0.12.2"
+  }
 }
