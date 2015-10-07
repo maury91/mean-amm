@@ -1,6 +1,6 @@
 # Mean AMM
 
-This is a remake of the project i've doed for Amm, it's built using MongoDB Express AngularJS and NodeJS.
+This is a remake of the project i've doed for Amm, it's built using MongoDB Express AngularJS and NodeJS. The Node App is developed using the Test Driven Development
 
 ## What is AMM ?
 
