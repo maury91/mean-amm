@@ -39,7 +39,7 @@ Simply execute **npm start** or **./bin/www**
 
 ## Testing enviroment
 
-**./bin/www** --NODE_ENV=test
+**./bin/www --NODE_ENV=test**
 
 ## Run tests
 
