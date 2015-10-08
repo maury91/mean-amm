@@ -2,16 +2,23 @@ angular.module("NodeAmm")
 	.factory('Language',function LanguageFactory($http,$window,$rootScope){
 		var LangReturns = {
 				strings : {},
-				change  : changeLanguage
+				change  : changeLanguage,
+				list 	: {},
+				selected: selectedLanguage
 			},
+			currentLanguage = false,
 			Watching = [];
+		function selectedLanguage() {
+			return currentLanguage;
+		}
 		function changeLanguage(lang) {
 			//Load language strings
 			$http.get('assets/lang/'+lang+'.json').then(function(result){
 				//Set the language data
+				currentLanguage = lang;
 				LangReturns.strings = result.data;
 				//Notify to watchers
-				$rootScope.$broadcast('lang:updated',LangReturns.strings);
+				$rootScope.$broadcast('lang:updated',LangReturns.strings,currentLanguage);
 			},function(){
 				console.error("Can't load language "+lang);
 			});
@@ -21,6 +28,10 @@ angular.module("NodeAmm")
 			//Obtain language list
 			$http.get('assets/lang/list.json').then(function(result){
 				var list = result.data;
+				//Exports the language list
+				LangReturns.list = list;
+				$rootScope.$broadcast('lang:loaded',LangReturns.list);
+
 				function preferedLanguage(lang_list) {
 					//Construct inverted list
 					var inv_list = {};

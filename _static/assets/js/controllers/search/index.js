@@ -20,6 +20,7 @@ angular.module('NodeAmm').controller('SearchIndexController', function($scope,$t
 	//Default language data
 	$scope.goto = Language.strings.search?Language.strings.search.goto : "";
 	$scope.near = Language.strings.search?Language.strings.search.near : "";
+	$scope.search_button = Language.strings.search?Language.strings.search.search : "";
 	//Load Lang Values
 	$scope.days = Language.strings.search?Language.strings.search.days : [];
 	$scope.types = Language.strings.search?Language.strings.search.types : [];
@@ -30,6 +31,7 @@ angular.module('NodeAmm').controller('SearchIndexController', function($scope,$t
 			$scope.types = newStrings.search.types;
 			$scope.goto = newStrings.search.goto;
 			$scope.near = newStrings.search.near;
+			$scope.search_button = Language.strings.search.search;
 			$scope.$digest();
 		});
 	});

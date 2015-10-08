@@ -1,5 +1,5 @@
 angular.module('NodeAmm')
-	.directive('naSelector', function($http,$rootScope){
+	.directive('naSelector', function($rootScope){
 		function selector_open(scope,elem) {
 			var shadow = $('<div class="selector_list"/>'),
 				opened= $('<div/>');

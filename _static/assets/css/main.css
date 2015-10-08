@@ -319,6 +319,68 @@ html,body {
 	background: #C0392B;
     color: #EEE;    
 }
+/* Language */
+
+
+body > ul.lang {
+
+position: absolute;
+
+right: 1rem;
+
+top: 1rem;
+
+padding: 0;
+
+margin: 0;
+
+z-index: 2;
+
+
+overflow: hidden;
+
+
+}
+
+
+
+body > ul.lang > li {
+	
+display: block;
+	
+width: 3rem;
+	
+height: 0rem;
+	
+background: center no-repeat;
+	
+background-size: 100%;
+	
+cursor: pointer;
+transition: height .4s;
+}
+
+body > ul.lang > li.selected,ul.lang:hover > li {
+	height: 2rem;
+
+}
+
+body > ul.lang > li.ng-leave {
+	display:none;
+}
+body > ul.lang > li.ng-enter:not(.selected) {
+	height:0;
+}
+
+/* Flags */
+
+.flag.it {
+	background-image: url(images/it.jpg);
+}
+
+.flag.en {
+	background-image: url(images/uk.jpg);
+}
 
 
 /* Sizes */

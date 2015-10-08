@@ -1,5 +1,5 @@
 angular.module('NodeAmm')
-	.directive('naPageNav', function($http){
+	.directive('naPageNav', function(){
 		return {
 			controller: 'MenuController',
 			restrict: 'E',
