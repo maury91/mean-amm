@@ -8,6 +8,7 @@
     "cookie-parser": "^1.4.0",
     "express": "^4.13.3",
     "express-session": "^1.11.3",
+    "gulp": "^3.9.0",
     "mongoose": "^4.1.9",
     "passport": "^0.3.0",
     "passport-local": "^1.0.0",
@@ -15,15 +16,26 @@
     "request": "^2.64.0"
   },
   "devDependencies": {
+    "bower": "^1.5.3",
+    "bower-installer": "^1.2.0",
+    "browser-sync": "^2.9.11",
+    "gulp-karma": "0.0.5",
+    "gulp-live-server": "0.0.29",
+    "gulp-nodemon": "^2.0.4",
+    "karma": "^0.13.10",
+    "karma-mocha": "^0.2.0",
+    "karma-mocha-reporter": "^1.1.1",
+    "karma-phantomjs-launcher": "^0.2.1",
     "mocha": "^2.3.3",
+    "phantomjs": "^1.9.18",
     "supertest": "^1.1.0"
   },
   "version": "1.0.0",
   "description": "Refactoring of the project I've doed for AMM (System Administrator)",
   "scripts": {
     "test": "mocha test.js --NODE_ENV=test",
-    "postinstall": "node defData.js",
-    "start": "node bin/www"
+    "postinstall": "bower install && bower_installer && node defData.js",
+    "start": "gulp open"
   },
   "keywords": [
     "nodejs",

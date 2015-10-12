@@ -1,22 +1,26 @@
 <!DOCTYPE html>
-<html ng-app="NodeAmm">
+<html>
 <head>
-	<title>Progettino AMM</title>
-	<meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
-	<link href="assets/css/main.css" rel="stylesheet" type="text/css"/>
-	<link href="assets/font.css" rel="stylesheet" type="text/css"/>
-	<link href='https://fonts.googleapis.com/css?family=Open+Sans:300,700|Lato:300,400' rel='stylesheet' type='text/css' />
+	<title>Testing Progettino AMM</title>
+	<!-- Vendors -->
+	<script type="text/javascript" src="assets/js/vendor/angular.min.js"></script>
+	<script type="text/javascript" src="assets/js/vendor/angular-animate.min.js"></script>
+	<script type="text/javascript" src="assets/js/vendor/angular-resource.min.js"></script>
+	<script type="text/javascript" src="assets/js/vendor/angular-route.min.js"></script>
+
+	<link rel="stylesheet" href="bower_components/mocha/mocha.css">
 </head>
 <body>
-	<na-lang-chooser></na-lang-chooser>
-	<div class="main" ng-view></div>
 
-	<!-- Vendors -->
-	<script type="text/javascript" src="assets/js/vendor/jquery/jquery.min.js"></script>
-	<script type="text/javascript" src="assets/js/vendor/angular/angular.min.js"></script>
-	<script type="text/javascript" src="assets/js/vendor/angular-animate/angular-animate.min.js"></script>
-	<script type="text/javascript" src="assets/js/vendor/angular-resource/angular-resource.min.js"></script>
-	<script type="text/javascript" src="assets/js/vendor/angular-route/angular-route.min.js"></script>
+	<div id="mocha"></div>
+	<script src='bower_components/mocha/mocha.js'></script>
+	<script src='bower_components/chai/chai.js'></script>
+	<script>
+		mocha.setup('bdd');
+	</script>
+	<script src="bower_components/angular-mocks/angular-mocks.js"></script>
+		
+
 
 	<!-- App -->
 	<script type="text/javascript" src="assets/js/app.js"></script>
@@ -41,9 +45,11 @@
 	<script type="text/javascript" src="assets/js/controllers/search/result.js"></script>
 	<script type="text/javascript" src="assets/js/controllers/menu.js"></script>
 	<script type="text/javascript" src="assets/js/controllers/login.js"></script>
-
-	<script type="text/javascript" src="assets/js/jquery.login.js"></script>
-
+	
+	<script type="text/javascript" src="test-frontend.js"></script>
+	<script>
+		mocha.run();
+	</script>
 
 </body>
 </html>

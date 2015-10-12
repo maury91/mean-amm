@@ -1,0 +1,135 @@
+{
+	"IcoMoonType": "selection",
+	"icons": [
+		{
+			"icon": {
+				"paths": [
+					"",
+					"M960 192h-192l-32.358-81.434c-6.404-25.61-33.242-46.566-59.642-46.566h-328c-26.4 0-53.238 20.956-59.642 46.566l-32.358 81.434h-192c-35.2 0-64 28.8-64 64v704c0 35.2 28.8 64 64 64h896c35.2 0 64-28.8 64-64v-704c0-35.2-28.8-64-64-64zM896 896h-768v-576h214.874l50.862-128h236.53l50.862 128h214.872v576zM512 368c-132.336 0-240 107.664-240 240s107.664 240 240 240 240-107.664 240-240-107.664-240-240-240zM512 752c-79.402 0-144-64.598-144-144s64.598-144 144-144 144 64.598 144 144-64.598 144-144 144z"
+				],
+				"attrs": [
+					{
+						"fill": "#ddd"
+					},
+					{
+						"fill": "#444"
+					}
+				],
+				"grid": 16
+			},
+			"attrs": [
+				{
+					"fill": "#ddd"
+				},
+				{
+					"fill": "#444"
+				}
+			],
+			"properties": {
+				"order": 1,
+				"id": 2,
+				"prevSize": 32,
+				"code": 58882,
+				"name": "photo",
+				"ligatures": ""
+			},
+			"setIdx": 0,
+			"iconIdx": 0
+		},
+		{
+			"icon": {
+				"paths": [
+					"",
+					"M576 64h-256l320 320h-640v256h640l-320 320h256l448-448z"
+				],
+				"attrs": [
+					{
+						"fill": "#ddd"
+					},
+					{
+						"fill": "#444"
+					}
+				],
+				"grid": 16
+			},
+			"attrs": [
+				{
+					"fill": "#ddd"
+				},
+				{
+					"fill": "#444"
+				}
+			],
+			"properties": {
+				"order": 1,
+				"id": 1,
+				"prevSize": 32,
+				"code": 58881,
+				"name": "next",
+				"ligatures": ""
+			},
+			"setIdx": 0,
+			"iconIdx": 1
+		},
+		{
+			"icon": {
+				"paths": [
+					"",
+					"M397.434 917.696l-397.868-391.6 197.378-194.27 200.49 197.332 429.62-422.852 197.378 194.27-626.998 617.12zM107.912 526.096l289.524 284.962 518.656-510.482-89.036-87.632-429.62 422.852-200.49-197.334-89.034 87.634z"
+				],
+				"attrs": [
+					{
+						"fill": "#ddd"
+					},
+					{
+						"fill": "#444"
+					}
+				],
+				"grid": 16
+			},
+			"attrs": [
+				{
+					"fill": "#ddd"
+				},
+				{
+					"fill": "#444"
+				}
+			],
+			"properties": {
+				"order": 1,
+				"id": 0,
+				"prevSize": 32,
+				"code": 58880,
+				"name": "sel",
+				"ligatures": ""
+			},
+			"setIdx": 0,
+			"iconIdx": 2
+		}
+	],
+	"height": 1024,
+	"metadata": {
+		"name": "amm"
+	},
+	"preferences": {
+		"showGlyphs": true,
+		"showQuickUse": true,
+		"fontPref": {
+			"prefix": "icon-",
+			"metadata": {
+				"fontFamily": "amm",
+				"majorVersion": 1,
+				"minorVersion": 0
+			},
+			"metrics": {
+				"emSize": 512,
+				"baseline": 6.25,
+				"whitespace": 50
+			}
+		},
+		"imagePref": {},
+		"historySize": 100,
+		"showCodes": true,
+		"search": ""
+	}
+}

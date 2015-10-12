@@ -361,7 +361,7 @@ describe("Single event",function(){
 					image: 'none',
 					data:  new Date() 
 				});
-			ev.save(function(err){
+			ev.insert().then(function(err){
 				done();
 			});
 		});
@@ -389,7 +389,7 @@ describe("Single event",function(){
 
 	it("Get event 'Fake Position' position.longname contain 'solarussa'", function(done) {
 		if (!lastBody.position || !lastBody.position.name || !lastBody.position.longname)
-			return done(true);
+			return done(new Error("Missing position data "+JSON.stringify(lastBody)));
 		if (!lastBody.position.longname.match(/solarussa/i))
 			return done(new Error('Position is '+lastBody.position.name ));
 		done();

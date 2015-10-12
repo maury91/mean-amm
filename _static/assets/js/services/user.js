@@ -2,7 +2,7 @@ angular.module("NodeAmm")
 	.factory('User',function UserFactory($http,$rootScope){
 		var UserService = {
 				logged : false,
-				setUser  : setUser
+				setLogged  : setUser
 			};
 		//Broadcast change to the user
 		function setUser(logged) {
@@ -11,7 +11,7 @@ angular.module("NodeAmm")
 		}
 		//Update initial value
 		$http.get('/user/current').then(function(){
-			UserService.setUser(true);
+			setUser(true);
 		});	
 		return UserService;
 	});

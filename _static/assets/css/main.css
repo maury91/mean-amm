@@ -231,6 +231,7 @@ html,body {
     right: .4em;
     cursor: pointer;
     display: none;
+    top: .15em;
 }
 .oneAT > div.text {
     font-size: 1em;
