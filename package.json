@@ -35,7 +35,7 @@
   "scripts": {
     "test": "mocha test.js --NODE_ENV=test",
     "postinstall": "bower install && bower-installer && node defData.js",
-    "start": "node /bin/www"
+    "start": "node bin/www"
   },
   "keywords": [
     "nodejs",
