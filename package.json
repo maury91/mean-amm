@@ -34,7 +34,7 @@
   "description": "Refactoring of the project I've doed for AMM (System Administrator)",
   "scripts": {
     "test": "mocha test.js --NODE_ENV=test",
-    "postinstall": "bower install && bower_installer && node defData.js",
+    "postinstall": "bower install && bower-installer && node defData.js",
     "start": "gulp open"
   },
   "keywords": [
